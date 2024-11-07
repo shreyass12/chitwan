@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Chitwan</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f3f4f6;
+    }
+    
+    /* Header */
+    header {
+      background: url('https://th.bing.com/th/id/OIP.c3Q0ajn4iA9Ccgcq8t1W9AHaEK?w=293&h=180&c=7&r=0&o=5&pid=1.7') no-repeat center center/cover;
+      color: #fff;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    header a {
+      padding: 10px 20px;
+      background-color: #4a90e2;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    
+    /* Navigation */
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    /* About Section */
+    .about {
+      padding: 2rem;
+      background-color: #fff;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 2rem;
+      color: #4a90e2;
+    }
+    .about p {
+      margin-top: 1rem;
+      line-height: 1.8;
+    }
+    
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      padding: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+    /* Things to Do */
+    .things-to-do {
+      padding: 2rem;
+      background-color: #f3f4f6;
+    }
+    .things-to-do h2 {
+      color: #4a90e2;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .things-to-do .activity {
+      display: flex;
+      margin: 1rem 0;
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    .things-to-do img {
+      width: 100px;
+      margin-right: 1rem;
+      border-radius: 5px;
+    }
+    .things-to-do p {
+      flex: 1;
+      line-height: 1.5;
+    }
+    
+    /* Accommodation */
+    .accommodation {
+      padding: 2rem;
+      background-color: #fff;
+    }
+    .accommodation h2 {
+      color: #4a90e2;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .accommodation .hotel {
+      margin-bottom: 1.5rem;
+    }
+    
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    footer a {
+      color: #4a90e2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div>
+      <h1>Discover Chitwan</h1>
+      <p>Experience the wildlife, culture, and adventure of Chitwan</p>
+      <a href="#about">Plan Your Trip</a>
+    </div>
+  </header>
+  
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#things-to-do">Things to Do</a></li>
+      <li><a href="#accommodation">Accommodation</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Chitwan</h2>
+    <p>Chitwan is known for its rich biodiversity and is home to the famous Chitwan National Park. Visitors can experience unique wildlife like the Bengal tiger, one-horned rhinos, and an abundance of bird species. It’s also a cultural hub where you can learn about the Tharu culture and enjoy traditional hospitality.</p>
+  </section>
+  
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <img src="park.jpg" alt="Scenic view of Chitwan National Park">
+    <img src="rhino.jpg" alt="One-horned Rhino in Chitwan">
+    <img src="tharu.jpg" alt="Tharu cultural performance in Chitwan">
+    <img src="safari.jpg" alt="Elephant safari in Chitwan National Park">
+  </section>
+  
+  <!-- Things to Do -->
+  <section class="things-to-do" id="things-to-do">
+    <h2>Things to Do</h2>
+    <div class="activity">
+      <img src="elephant.jpg" alt="Elephant Safari">
+      <p><strong>Elephant Safari</strong>: Take an elephant safari through Chitwan National Park and witness rhinos, deer, and other exotic wildlife up close.</p>
+    </div>
+    <div class="activity">
+      <img src="canoe.jpg" alt="Canoe Ride">
+      <p><strong>Canoe Ride</strong>: Enjoy a serene canoe ride along the Rapti River and catch glimpses of crocodiles, exotic birds, and lush landscapes.</p>
+    </div>
+  </section>
+  
+  <!-- Accommodation -->
+  <section class="accommodation" id="accommodation">
+    <h2>Accommodation</h2>
+    <div class="hotel">
+      <p><strong>Hotel Jungle Crown</strong> - Located near the national park, offering comfortable rooms with jungle views and close access to safari tours.</p>
+    </div>
+    <div class="hotel">
+      <p><strong>Tharu Village Resort</strong> - A traditional Tharu-style stay with authentic cultural experiences and homely hospitality.</p>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Explore Chitwan | <a href="#contact">Contact Us</a></p>
+  </footer>
+
+</body>
+</html>
